@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>App</title>
+    <style>
+      .btn {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: crimson;
+        margin-right: 3px;
+        color: white;
+        cursor: pointer;
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Toggle Button -->
+      <button class="btn" @click="toggleShowBooks">
+        <span v-if="showBooks">Hide books</span>
+        <span v-else>Show books</span>
+      </button>
+
+      <div v-if="showBooks">
+        <p>{{ title }} - by {{ author }}, {{ age }} years old</p>
+      </div>
+      <!-- Method 1: else -->
+      <!-- <div v-else>
+        <p>Click the button below to show books</p>
+      </div> -->
+
+      <!-- Method 2 -->
+      <div v-if="!showBooks">
+        <p>Click the button below to show books</p>
+      </div>
+
+      <!-- # show only if condition is true -->
+      <div v-show="showBooks">List of Books</div>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

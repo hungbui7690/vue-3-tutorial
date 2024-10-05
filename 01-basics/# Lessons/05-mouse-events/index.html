@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>App</title>
+    <style>
+      .box {
+        padding: 100px 0;
+        width: 400px;
+        text-align: center;
+        background: #ddd;
+        margin: 20px;
+        display: inline-block;
+      }
+      .btn {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: crimson;
+        margin-right: 3px;
+        color: white;
+        cursor: pointer;
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <button @click="toggleShowBooks">
+        <span v-if="showBooks">Hide books</span>
+        <span v-else>Show books</span>
+      </button>
+
+      <div v-if="showBooks">
+        <p>{{ title }} - by {{ author }}, {{ age }} years old</p>
+      </div>
+
+      <br />
+
+      <!-- MOUSE EVENTS -->
+      <!-- $event === event object -->
+      <div class="box" @mouseover="handleEvent($event, 5)">
+        mouseover (enter)
+      </div>
+      <div class="box" @mouseleave="handleEvent">mouseleave</div>
+      <div class="box" @dblclick="handleEvent">double click me</div>
+      <div class="box" @mousemove="handleMousemove">
+        position {{ x }} {{ y }}
+      </div>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

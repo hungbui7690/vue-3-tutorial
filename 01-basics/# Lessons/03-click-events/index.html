@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>App</title>
+    <style>
+      .btn {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: crimson;
+        border-radius: 3px;
+        margin-right: 3px;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, Vue :)</h1>
+
+    <div id="app">
+      <p>{{ title }} - by {{ author }}, {{ age }} years old</p>
+
+      <button v-on:click="age++">Increase age</button>
+      <button @click="age--">Decrease age</button>
+
+      <br /><br />
+
+      <!-- Method 1: No need to create method -->
+      <div class="btn" @click="title = 'Something else'">Change book title</div>
+
+      <!-- Method 2: Need to create method -->
+      <div class="btn" @click="changeTitle('Oathbringer')">
+        Change book title
+      </div>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
