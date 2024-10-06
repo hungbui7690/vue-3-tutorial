@@ -7,9 +7,7 @@
 
 ******************
 
-  <Modal
-    header="Please sign-up"
-    text="Sign-up allow you to access more features"/>
+  <Modal header="Please sign-up" text="Sign-up allow you to access more features"/>
 
 
 */

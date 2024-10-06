@@ -33,9 +33,7 @@ const app = Vue.createApp({
     // # event object
     handleEvent(e, data) {
       console.log(e.type, e)
-      if (data) {
-        console.log(data)
-      }
+      if (data) console.log(data)
     },
     handleMousemove(e) {
       this.x = e.offsetX

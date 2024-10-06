@@ -29,7 +29,7 @@ export default {
 </script>
 
 <template>
-  <!-- # data binding -->
+  <!-- # dynamic data binding -> ref to data() above -->
   <Modal :header="header" :text="text" theme="winter" />
   <input type="text" ref="username" />
   <button @click="handleClick">click me</button>

@@ -7,7 +7,7 @@ export default {
 
 <template>
   <div class="backdrop">
-    <!-- # true -> then use "winter" -->
+    <!-- # theme === winter -> class="modal winter" -->
     <div class="modal" :class="{ winter: theme === 'winter' }">
       <h1>{{ header }}</h1>
       <p>{{ text }}</p>

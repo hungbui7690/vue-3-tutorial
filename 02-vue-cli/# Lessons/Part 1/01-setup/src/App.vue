@@ -3,9 +3,10 @@
   Setup 
   !! npm create vite@latest playground -- --template vue
 
+
 */
 
-// # this just work when <script> has no "setup"
+// # this just work when <script> has no "setup" (<script setup>)
 export default {
   name: 'App',
   data() {

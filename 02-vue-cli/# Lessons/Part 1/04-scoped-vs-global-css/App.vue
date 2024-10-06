@@ -2,10 +2,9 @@
 /*
   Scoped & Global CSS
   - App.vue 
-    -> <style> -> h1
-    -> global css
-  - Modal.vue -> we have h1 
-    -> h1 has the style of App.vue
+    -> <style> -> h1 -> this is global css
+  - Modal.vue 
+    -> we have h1 tag in <template> -> h1 has the style of App.vue
 
 
 *************************
@@ -14,10 +13,10 @@
   - Modal.vue -> <style> -> h1 -> overwrite App.vue
 
   Solution 2: 
-  - <style scoped>
+  - Modal.vue -> <style scoped> 
     -> scoped to this file only
 
-  🌿 If we add "scoped" -> will create unique data-v-xxxx
+  🌿 If we add "scoped" -> will create unique data-v-xxxx -> inspect
 
 
 *************************

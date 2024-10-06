@@ -1,7 +1,7 @@
 /*
   Attribute Binding 
   - static: 
-    -> <img src="./assets/1.jpg" :alt="book.title" />
+    -> <img src="./assets/1.jpg" alt="book 1" />
   - dynamic:
     -> <img :src="book.img" :alt="book.title" />
 
@@ -9,7 +9,7 @@
 **********************
 
   - <a v-bind:href="url">
-  - <a :href="url">
+    -> shortcut -> no need v-bind -> <a :href="url">
   - <img :src="book.img" :alt="book.title" />
 
 

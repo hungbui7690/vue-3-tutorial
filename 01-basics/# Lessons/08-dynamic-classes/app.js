@@ -2,7 +2,11 @@
   Dynamic Classes
   - :class="{ fav: book.isFav }"
     -> book.isFav is true -> class="fav"
-  - @click="book.isFav= !book.isFav"
+
+
+*********************
+
+  - @click="book.isFav = !book.isFav"
     -> toggle
 
 

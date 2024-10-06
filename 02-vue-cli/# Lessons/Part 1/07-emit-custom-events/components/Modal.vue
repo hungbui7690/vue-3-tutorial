@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <!-- 2. go back to App.vue -->
+  <!-- 2. click this div -> emit "close" event -->
   <div class="backdrop" @click="closeModal">
     <div class="modal" :class="{ winter: theme === 'winter' }">
       <h1>{{ header }}</h1>
