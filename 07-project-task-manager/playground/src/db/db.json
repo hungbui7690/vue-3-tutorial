@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Create new homepage banner ",
+      "details": "Lorem ipsum",
+      "complete": true
+    },
+    {
+      "id": "2",
+      "title": "Make marketing email",
+      "details": "Lorem ipsum",
+      "complete": true
+    },
+    {
+      "id": "3",
+      "title": "Share with community",
+      "details": "Lorem ipsum",
+      "complete": false
+    },
+    {
+      "id": "4",
+      "title": "Schedule meeting",
+      "details": "Lorem ipsum",
+      "complete": false
+    },
+    {
+      "id": "5",
+      "title": "Add new hero image",
+      "details": "Lorem ipsum",
+      "complete": false
+    },
+    {
+      "id": "1728335841978",
+      "title": "Learn Vue JS",
+      "details": "lorem\n",
+      "complete": false
+    }
+  ]
+}
