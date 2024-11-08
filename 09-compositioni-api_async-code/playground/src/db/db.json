@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Modern API data-fetching methods in React",
+      "body": "Over the years, how we fetch data into React applications has evolved. For developers who aim to be ahead of the curve, understanding how fetching data works in the current dispensation is essential...",
+      "tags": ["react", "axios"]
+    },
+    {
+      "id": 2,
+      "title": "My second post",
+      "body": "This is my second post",
+      "tags": ["vue", "json-server"]
+    }
+  ]
+}
